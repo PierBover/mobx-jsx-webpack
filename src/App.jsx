@@ -1,14 +1,13 @@
-import {observable, action} from 'mobx';
+import {observable} from 'mobx';
 
 export default function App () {
 	const state = observable({
 		randomNumber: 0
 	});
 
-	const updateNumber = action(() => {
+	const updateNumber = () => {
 		state.randomNumber = Math.random();
-		console.log(state.randomNumber);
-	});
+	};
 
 	setInterval(() => {
 		console.log('interval!');
@@ -16,6 +15,6 @@ export default function App () {
 	}, 1000);
 
 	return (
-		<div>{state.randomNumber}</div>
+		<div>{(state.randomNumber)}</div>
 	);
 }

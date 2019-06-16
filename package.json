@@ -19,8 +19,6 @@
   "homepage": "https://github.com/PierBover/mobx-jsx-webpack#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "babel-loader": "^8.0.6",
     "babel-plugin-jsx-dom-expressions": "^0.9.14",
